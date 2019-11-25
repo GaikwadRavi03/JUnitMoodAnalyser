@@ -53,4 +53,10 @@ public class MoodAnalyserTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void givenObject_WhenCorrect_ReturnsInfoUsingReflection() {
+        MoodAnalyser moodAnalyze = new MoodAnalyser();
+        ObjectReflector.dump(moodAnalyze, 3);
+    }
 }
